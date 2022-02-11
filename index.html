@@ -25,19 +25,16 @@
         <div id="notacion"></div>
     <div>    
     <script type="text/javascript">
-        function onMoveEnd (oldPos, newPos) {
-           document.getElementById('notacion').innerHTML='onMoveEnd';
-        } 
+        $(window).resize(board.resize)        
         function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
             valor = document.getElementById('notacion').value;
-            document.getElementById('notacion').innerHTML= ' ' +valor ' ' +newlocation ' ' +oldlocation ' ' +source ' ' +piece ' ' +position; 
+            document.getElementById('notacion').innerHTML= ' ' +newlocation; 
         }
         var board = Chessboard('tablero', {
                 draggable: true,
                 dropOffBoard: 'trash',
                 sparePieces: true,
                 showNotation: true,
-                onMoveEnd: onMoveEnd,
                 onDragMove: onDragMove
             });
     </script>
