@@ -19,15 +19,17 @@
 </head>
 <body>    
     <div class="center">
-        <h1 id="notacion">Tablero de Análisis</h1>
+        <h1>Tablero de Análisis</h1>
         <div id="tablero"></div>
+        <h2>Notación</h2>
+        <div id=notacion</h2>
     <div>    
     <script type="text/javascript">
         function onMoveEnd (oldPos, newPos) {
            document.getElementById('notacion').innerHTML='onMoveEnd';
         } 
         function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
-            document.getElementById('notacion').innerHTML='onMoveEnd';
+            document.getElementById('notacion').innerHTML='prueba';
         }
         var board = Chessboard('tablero', {
                 draggable: true,
