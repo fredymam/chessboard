@@ -30,6 +30,8 @@
         } 
         function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
             document.getElementById('notacion').innerHTML='prueba';
+            valor = document.getElementById('notacion').value;
+            document.getElementById('notacion').innerHTML=valor+' '+newlocation+' '+oldlocation+' '+source+' '+piece+' '+position; 
         }
         var board = Chessboard('tablero', {
                 draggable: true,
