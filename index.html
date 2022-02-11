@@ -25,7 +25,6 @@
         <div id="notacion"></div>
     </div>    
     <script type="text/javascript">
-        $(window).resize(board.resize);
         function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
             document.getElementById('notacion').innerHTML= ' ' +newlocation; 
         }
@@ -36,6 +35,7 @@
                 showNotation: true,
                 onDragMove: onDragMove
             });
+        $(window).resize(board.resize);
     </script>
 </body>
 </html>
