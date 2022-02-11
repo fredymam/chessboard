@@ -25,11 +25,13 @@
         <div id="notacion"</div>
     </div>    
     <script type="text/javascript">
+        var jugada = 0;
         function onDrop (source, target, piece, newPos, oldPos, orientation) {
-            const jugada = document.createElement("p");
-            const movimiento = document.createTextNode('Pieza: ' + piece + ' Origen: ' + source + ' Destino: ' + target); 
-            jugada.appendChild(movimiento);
-            document.getElementById("notacion").appendChild(jugada); 
+            jugada++;
+            const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' + source + ' ' + target); 
+            const parrafo = document.createElement("p");
+            parrafo.appendChild(movimiento);
+            document.getElementById("notacion").appendChild(parrafo); 
         }
         var board = Chessboard('tablero', {
                 draggable: true,
