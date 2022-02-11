@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
     <title>Tablero de Estudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/chessboard-1.0.0.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -11,7 +11,8 @@
     <style>
         .center {
           margin: auto;
-          height: 80%;
+          max-width: 100%;
+          height: auto;
           border: 3px solid;
           padding: 10px;
           text-align: center;
@@ -31,11 +32,12 @@
                 sparePieces: true,
                 showNotation: true,
             });
-        function onMoveEnd (oldPos, newPos) {
+    </script>
+    <script>
+       function onMoveEnd (oldPos, newPos) {
           document.write("<p>prueba</p>");
-          document.write("<p> Chessboard.objToFen(oldPos) ~~ Chessboard.objToFen(newPos)</p>");
-        }
-                                
+          document.write("<p> Chessboard.objToFen(oldPos)  Chessboard.objToFen(newPos)</p>");
+       }                               
     </script>
 </body>
 </html>
