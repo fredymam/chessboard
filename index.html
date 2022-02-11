@@ -18,16 +18,15 @@
     </style>
 </head>
 <body>    
-    <div>
+    <div class="center">
         <h1>Tablero de Análisis</h1>
         <div id="tablero"></div>
-        <h2>Notación bug</h2>
+        <h2>Notación</h2>
         <div id="notacion"></div>
     </div>    
     <script type="text/javascript">
-        $(window).resize(board.resize)        
+     
         function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
-            valor = document.getElementById('notacion').value;
             document.getElementById('notacion').innerHTML= ' ' +newlocation; 
         }
         var board = Chessboard('tablero', {
