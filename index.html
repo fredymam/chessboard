@@ -32,10 +32,7 @@
                 showNotation: true,
             });
         function onMoveEnd (oldPos, newPos) {
-          console.log('Move animation complete:')
-          console.log('Old position: ' + Chessboard.objToFen(oldPos))
-          console.log('New position: ' + Chessboard.objToFen(newPos))
-          console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+          document.write("<p> Chessboard.objToFen(oldPos) ~~ Chessboard.objToFen(newPos)</p>");
         }
                                 
     </script>
