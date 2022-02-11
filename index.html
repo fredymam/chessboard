@@ -15,7 +15,11 @@
         <div id="board1"></div>
     </div>
     <script type="text/javascript">
-       var board = Chessboard('board1')
+       var board = Chessboard('board1', {
+                draggable: true,
+                dropOffBoard: 'trash',
+                sparePieces: true
+            });
     </script>
 </body>
 </html>
