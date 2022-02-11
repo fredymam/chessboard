@@ -25,12 +25,19 @@
         <div id="board1"></div>
     </div>
     <script type="text/javascript">
-       var board = Chessboard('board1', {
+        var board = Chessboard('board1', {
                 draggable: true,
                 dropOffBoard: 'trash',
                 sparePieces: true,
                 showNotation: true,
             });
+        function onMoveEnd (oldPos, newPos) {
+          console.log('Move animation complete:')
+          console.log('Old position: ' + Chessboard.objToFen(oldPos))
+          console.log('New position: ' + Chessboard.objToFen(newPos))
+          console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        }
+                                
     </script>
 </body>
 </html>
