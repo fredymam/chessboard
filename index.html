@@ -26,8 +26,8 @@
     </div>    
     <script type="text/javascript">
         function onDrop (source, target, piece, newPos, oldPos, orientation) {
-            var movimiento = document.createTextNode(piece);                                    
-            document.getElementById("notacion").appendChild(movimiento + ' ' + source); 
+            var movimiento = document.createTextNode(piece + ' ' + source);                                    
+            document.getElementById("notacion").appendChild(movimiento); 
         }
         var board = Chessboard('tablero', {
                 draggable: true,
