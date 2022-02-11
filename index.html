@@ -22,12 +22,14 @@
         <h1>Tablero de Análisis</h1>
         <div id="tablero"></div>
         <h2>Notación</h2>
-        <div><p id="notacion"></p></div>
+        <div id="notacion"</div>
     </div>    
     <script type="text/javascript">
         function onDrop (source, target, piece, newPos, oldPos, orientation) {
-            var movimiento = document.createTextNode('Pieza: ' + piece + ' Origen: ' + source + ' Destino: ' + target);                                    
-            document.getElementById("notacion").appendChild(movimiento); 
+            const jugada = document.createElement("p");
+            const movimiento = document.createTextNode('Pieza: ' + piece + ' Origen: ' + source + ' Destino: ' + target); 
+            jugada.appendChild(movimiento);
+            document.getElementById("notacion").appendChild(jugada); 
         }
         var board = Chessboard('tablero', {
                 draggable: true,
