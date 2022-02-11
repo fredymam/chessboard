@@ -26,7 +26,8 @@
     </div>    
     <script type="text/javascript">
         function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
-            document.getElementById('notacion').innerHTML= ' ' +newlocation; 
+            var movimiento = document.createTextNode(+newlocation);                                    
+            document.getElementById("notacion").appendChild(movimiento); 
         }
         var board = Chessboard('tablero', {
                 draggable: true,
