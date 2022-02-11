@@ -11,20 +11,24 @@
     <style>
         .center {
           margin: auto;
-          height: 80%;
+          width: 50%;
           border: 3px solid;
-          padding: 10px;
+          padding: 5px;
           text-align: center;
         }
     </style>
 </head>
 <body>    
-    <div class="center" id="board1"></div>
+    <div class="center">
+        <h1>Tablero de Análisis</h1>
+        <div id="tablero"></div>
+        <div id="notacion"></div>
+    <div>    
     <script type="text/javascript">
         function onMoveEnd (oldPos, newPos) {
-          document.write("<body><p>prueba</p></body>");
+           document.getElementById('notacion').innerHTML='prueba';
         } 
-        var board = Chessboard('board1', {
+        var board = Chessboard('tablero', {
                 draggable: true,
                 dropOffBoard: 'trash',
                 sparePieces: true,
