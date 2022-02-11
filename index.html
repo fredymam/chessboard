@@ -24,14 +24,18 @@
     <div>    
     <script type="text/javascript">
         function onMoveEnd (oldPos, newPos) {
-           document.getElementById('notacion').innerHTML='prueba';
+           document.getElementById('notacion').innerHTML='onMoveEnd';
         } 
+        function onDragMove (newLocation, oldLocation, source, piece, position, orientation) {
+            document.getElementById('notacion').innerHTML='onMoveEnd';
+        }
         var board = Chessboard('tablero', {
                 draggable: true,
                 dropOffBoard: 'trash',
                 sparePieces: true,
                 showNotation: true,
-                onMoveEnd: onMoveEnd
+                onMoveEnd: onMoveEnd,
+                onDragMove: onDragMove
             });
     </script>
 </body>
