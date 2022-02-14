@@ -24,7 +24,7 @@
                 <h2>Posición</h2>
                 <input type="button" id="startBtn" value="Vacío"/>
                 <input type="button" id="clearBtn" value="Inicial"/>
-                <input type="button" id="quiz1Btn" value="Desafió #1"/>
+                <input type="button" id="quizBtn" value="Desafió #1"/>
                 <h2>Notación</h2>
                 <div id="notacion"</div>
             </div>
@@ -45,12 +45,11 @@
                 dropOffBoard: 'trash',
                 sparePieces: true,
                 showNotation: true,
-                onDrop: onDrop
-            });
+                onDrop: onDrop});
         $(window).resize(board.resize);
         $('#startBtn').on('click', board.start);
         $('#clearBtn').on('click', board.clear);
-        $('#quiz1Btn').on('click', board.position({a1: 'wK', e4: 'wQ'});
+        $('#quizBtn').on('click', board.position({a1: 'wK', e4: 'wQ'});
     </script>
 </body>
 </html>
