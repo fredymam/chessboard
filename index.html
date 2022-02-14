@@ -22,8 +22,8 @@
             </div>
             <div class="col-md-4">
                 <h2>Posición</h2>
-                <input type="button" id="clearBtn" value="Tablero Vacío"/>
-                <input type="button" id="startBtn" value="Posición Estándar"/>
+                <input type="button" id="clearBtn" value="Limpiar el Tablero"/>
+                <input type="button" id="startBtn" value="Posición Inicial"/>
                 <input type="button" id="quiz1Btn" value="Desafió #1"/>
                 <input type="button" id="quiz2Btn" value="Desafió #2"/>
                 <h2>Notación</h2>
@@ -51,7 +51,7 @@
         $('#startBtn').on('click', board.start);
         $('#clearBtn').on('click', board.clear);
         $('#quiz1Btn').on('click', function () { board.position({a1: 'wK', e4: 'wQ'}) });
-        $('#quiz1Btn').on('click', function () { board.position('8/8/8/8/ppp5/nnbp4/rbnp4/krnp4') });
+        $('#quiz2Btn').on('click', function () { board.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
     </script>
 </body>
 </html>
