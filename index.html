@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>Tablero de Análisis</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/chessboard-1.0.0.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         .center {
           margin: auto;
@@ -20,12 +22,12 @@
     </style>
 </head>
 <body>    
-    <div class="center">
-        <div>
+    <div class="container">
+        <div class="col-md-6">
             <h1>Tablero de Análisis</h1>
             <div id="tablero"></div>
         </div>
-        <div>
+        <div class="col-md-6">
             <h1>Notación</h1>
             <div id="notacion"</div>
         </div>
