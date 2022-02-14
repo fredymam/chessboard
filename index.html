@@ -8,22 +8,22 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     <script src="js/chessboard-1.0.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        h1 {text-align:center;}
-    </style>
 </head>
 <body>    
     <div class="container">
         <div class="row">
-            <div class="col-md-8" id="tablero"></div>
+            <div class="col-md-8">
+                <h1 style="text-align:center;">Tablero de Análisis</h1>
+                <div id="tablero" style="width: 70%; margin: auto;"></div>
+            </div>
             <div class="col-md-4">
                 <h1>Notación</h1>
                 <div id="notacion"</div>
             </div>
         </div>
     </div>    
+ 
     <script type="text/javascript">
         var jugada = 0;
         function onDrop (source, target, piece, newPos, oldPos, orientation) {
