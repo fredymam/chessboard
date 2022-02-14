@@ -22,7 +22,8 @@
             </div>
             <div class="col-md-4">
                 <h2>Posición</h2>
-                <input type="button" id="clearBtn" value="Limpiar el Tablero"/>
+                <input type="button" id="clearBtn" value="Limpiar Tablero"/>
+                <input type="button" id="flipBtn" value="Girar Tablero"/>
                 <input type="button" id="startBtn" value="Posición Inicial"/>
                 <input type="button" id="quiz1Btn" value="Desafió #1"/>
                 <input type="button" id="quiz2Btn" value="Desafió #2"/>
@@ -50,6 +51,7 @@
                 onDrop: onDrop});
         $(window).resize(board.resize);
         $('#startBtn').on('click', board.start);
+        $('#flipBtn').on('click', board.flip)
         $('#clearBtn').on('click', board.clear);
         $('#quiz1Btn').on('click', function () { board.position({a1: 'wK', e4: 'wQ'}) });
         $('#quiz2Btn').on('click', function () { board.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
