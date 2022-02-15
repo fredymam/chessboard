@@ -28,8 +28,7 @@ function inicializar() {
                 showNotation: true,
                 onDrop: onDrop});			
 	$(window).resize(board.resize);				
-	$('#startBtn').on('click', board.start);
-	$('#flipBtn').on('click', board.flip)
+	$('#flipBtn').on('click', board.flip);
 	$('#clearBtn').on('click', dropMovimientos());
 	$('#quiz1Btn').on('click', function () { board.position({a1: 'wK', e4: 'wQ'}) });
 	$('#quiz2Btn').on('click', function () { board.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
