@@ -2,7 +2,7 @@ var board;
 var jugada = 0;
 
 function onDrop (source, target, piece, newPos, oldPos, orientation) {
-	if !((source == 'spare') || (target == 'offboard')) {
+	if (!(source == 'spare' || target == 'offboard')) {
 	    jugada++;
 	    const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' +  source + '-' + target); 
 	    const parrafo = document.createElement("p");
