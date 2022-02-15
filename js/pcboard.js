@@ -4,12 +4,12 @@ var jugada = 0;
 function onDrop (source, target, piece, newPos, oldPos, orientation) {
     jugada++;
     const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' +  (source === 'spare' ? '-' : source) + ' ' + target); 
-    const parrafo = document.createElement("li");
+    const parrafo = document.createElement("p");
     parrafo.appendChild(movimiento);
     document.getElementById("notacion").appendChild(parrafo); 
 }
 
-function init() {
+function inicializar() {
 	board = Chessboard('tablero', {
                 draggable: true,
                 dropOffBoard: 'trash',
