@@ -16,6 +16,7 @@ function dropMovimientos () {
   const lista = document.getElementById("notacion");
   while (lista.hasChildNodes()) {  
 	  lista.removeChild(lista.firstChild);
+  alert("pruobando")
 }
 
 function inicializar() {
