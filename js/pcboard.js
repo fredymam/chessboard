@@ -12,6 +12,7 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 }
 
 function dropMovimientos () {
+  alert("no anda");
   board.clear;
   jugada = 0;
   const lista = document.getElementById("notacion");
@@ -29,7 +30,7 @@ function inicializar() {
                 onDrop: onDrop});			
 	$(window).resize(board.resize);				
 	$('#flipBtn').on('click', board.flip);
-	$('#clearBtn').on('click', dropMovimientos);
+	$('#clearBtn').on('click', dropMovimientos());
 	$('#quiz1Btn').on('click', function () { board.position({a1: 'wK', e4: 'wQ'}) });
 	$('#quiz2Btn').on('click', function () { board.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
 	$('#quiz3Btn').on('click', function () { board.position('2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2') });
