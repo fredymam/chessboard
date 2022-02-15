@@ -5,11 +5,12 @@
     <title>Tablero de Análisis</title>
     <link rel="stylesheet" href="css/chessboard-1.0.0.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="js/chessboard-1.0.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
     		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-    <script src="js/chessboard-1.0.0.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/pcboard.js"></script>
     <style type="text/css">
         body {overscroll-behavior: contain;} <!-- deshabilita el refresh en Android --> 
     </style>
@@ -29,35 +30,14 @@
                 <input type="button" id="quiz2Btn" value="Desafío #2"/>
                 <input type="button" id="quiz3Btn" value="Desafío #3"/>
                 <input type="button" id="quiz4Btn" value="Desafío #4"/>
-                <h2>Notación Algebraica</h2>
+                <h2>Notación</h2>
                 <div class="col-md-4" id="notacion"></div>
             </div>
         </div>
     </div>    
  
     <script type="text/javascript">
-        var jugada = 0;
-        function onDrop (source, target, piece, newPos, oldPos, orientation) {
-            jugada++;
-            const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' +  (source === 'spare' ? '-' : source) + ' ' + target); 
-            const parrafo = document.createElement("li");
-            parrafo.appendChild(movimiento);
-            document.getElementById("notacion").appendChild(parrafo); 
-        }
-        var board = Chessboard('tablero', {
-                draggable: true,
-                dropOffBoard: 'trash',
-                sparePieces: true,
-                showNotation: true,
-                onDrop: onDrop});
-        $(window).resize(board.resize);
-        $('#startBtn').on('click', board.start);
-        $('#flipBtn').on('click', board.flip)
-        $('#clearBtn').on('click', board.clear);
-        $('#quiz1Btn').on('click', function () { board.position({a1: 'wK', e4: 'wQ'}) });
-        $('#quiz2Btn').on('click', function () { board.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
-        $('#quiz3Btn').on('click', function () { board.position('2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2') });
-        $('#quiz4Btn').on('click', function () { board.position('8/8/8/8/PP6/8/2P5/rnb5') });
+		init();
     </script>
 </body>
 </html>
