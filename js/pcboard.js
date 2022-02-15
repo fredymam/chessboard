@@ -13,7 +13,7 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 
 function dropMovimientos () {
   alert("no anda");
-  board.clear;
+  board.clear();
   jugada = 0;
   const lista = document.getElementById("notacion");
   while (lista.hasChildNodes()) {  
