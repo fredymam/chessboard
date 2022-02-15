@@ -12,7 +12,7 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 }
 
 function dropMovimientos () {
-  board.clear;
+  board.start;
   alert("pruobando");
   const lista = document.getElementById("notacion");
   while (lista.hasChildNodes()) {  
