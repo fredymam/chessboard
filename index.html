@@ -3,7 +3,7 @@
 <head>
     <title>Tablero de Análisis</title>
     <link rel="stylesheet" href="css/chessboard-1.0.0.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
@@ -16,19 +16,17 @@
 <body>    
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <h2 style="text-align:center;">Tablero de Análisis</h2>
-                <div id="tablero" style="width: 60%; margin: auto;"></div>
-            </div>
+            <div id="tablero" class="col-md-8">
             <div class="col-md-4">
-                <h2>Posición</h2>
+                <h2>Editor de Tablero</h2>
+                <input type="button" id="startBtn" value="Posición Inicial"/>
                 <input type="button" id="clearBtn" value="Limpiar Tablero"/>
                 <input type="button" id="flipBtn" value="Girar Tablero"/>
-                <input type="button" id="startBtn" value="Posición Inicial"/>
                 <input type="button" id="quiz1Btn" value="Desafió #1"/>
                 <input type="button" id="quiz2Btn" value="Desafió #2"/>
                 <input type="button" id="quiz3Btn" value="Desafió #3"/>
-                <h2>Notación</h2>
+                <input type="button" id="quiz4Btn" value="Desafió #4"/>
+                <h2>Notación Algebraica</h2>
                 <div id="notacion"</div>
             </div>
         </div>
@@ -56,6 +54,7 @@
         $('#quiz1Btn').on('click', function () { board.position({a1: 'wK', e4: 'wQ'}) });
         $('#quiz2Btn').on('click', function () { board.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
         $('#quiz3Btn').on('click', function () { board.position('2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2') });
+        $('#quiz4Btn').on('click', function () { board.position('8/8/8/8/PP6/8/2P5/rnb5') });
     </script>
 </body>
 </html>
