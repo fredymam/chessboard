@@ -13,8 +13,9 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 		parrafo.appendChild(movimiento);
 	    var trebejo = document.createElement("img");
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
-	    trebejo.style.width = "1.5em";
-	    trebejo.style.height = "1.5em";
+	    trebejo.style.width = "2em";
+	    trebejo.style.height = "2em";
+	    trebejo.style.display = "inline";
 	    parrafo.appendChild(trebejo);
 	    var coordenada = document.createTextNode(' '+source +'-'+ target);
         parrafo.appendChild(coordenada);
@@ -46,7 +47,7 @@ function inicializar() {
 	$(window).resize(tablero.resize);				
 	$('#flipBtn').on('click', tablero.flip);
 	$('#clearBtn').on('click', function () { loadDesafio(0) });
-	$('#quiz1Btn').on('click', function () { loadDesafio(1) });;
+	$('#quiz1Btn').on('click', function () { loadDesafio(1) });
 	$('#quiz2Btn').on('click', function () { loadDesafio(2) });
 	$('#quiz3Btn').on('click', function () { loadDesafio(3) });
 	$('#quiz4Btn').on('click', function () { loadDesafio(4) });
