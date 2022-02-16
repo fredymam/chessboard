@@ -33,6 +33,7 @@ function dropMovimientos () {
 function loadDesafio (num) {
   dropMovimientos();	
   tablero.position(desafios[num]);	
+  alert(desafios[num]);
 }
 
 function inicializar() {
