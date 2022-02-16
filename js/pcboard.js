@@ -17,8 +17,7 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	    trebejo.style.width = "1em";
 	    trebejo.style.height = "auto";
 	    parrafo.appendChild(trebejo);
-	    movimiento += source + '-' + target; 
-	    parrafo.appendChild(movimiento);
+
 	    document.getElementById("notacion").appendChild(parrafo);	
 	}
 }
