@@ -2,7 +2,7 @@ var tablero;
 var jugada = 0;
 var desafios = ['8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4',
 				'2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2',
-				'8/8/8/8/PP6/8/2P5/rnb5']
+				'8/8/8/8/PP6/8/2P5/rnb5'];
 
 function onDrop (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
