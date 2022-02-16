@@ -12,13 +12,13 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 }
 
 function dropMovimientos () {
-  tablero.flip;
+  tablero.flip();
   jugada = 0;
   const lista = document.getElementById("notacion");
   while (lista.hasChildNodes()) {  
 	  lista.removeChild(lista.firstChild);
   }	 
-  alert("debugeando");
+  alert("flip function");
 }
 
 function inicializar() {
