@@ -1,16 +1,21 @@
 var tablero;
 var jugada = 0;
+var desafios = ['8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4',
+				'2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2',
+				'8/8/8/8/PP6/8/2P5/rnb5']
 
 function onDrop (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
-	    jugada++;
-	    const trebejo = document.createElement("img");
+		var parrafo = document.createElement("p");
+		jugada++;
+		var movimiento = document.createTextNode(jugada + '. ');
+		parrafo.appendChild(movimiento);
+	    var trebejo = document.createElement("img");
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
-	    trebejo.style.width = "2em";
+	    trebejo.style.width = "1em";
 	    trebejo.style.height = "auto";
-	    const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' +  source + '-' + target); 
-	    const parrafo = document.createElement("p");
 	    parrafo.appendChild(trebejo);
+	    movimiento += source + '-' + target; 
 	    parrafo.appendChild(movimiento);
 	    document.getElementById("notacion").appendChild(parrafo);	
 	}
@@ -25,6 +30,11 @@ function dropMovimientos () {
   }	 
 }
 
+function loadDesafio(num) {
+  dropMovimientos();	
+  tablero.position(desafios[1]);	
+}
+
 function inicializar() {
 	tablero = Chessboard('tablero', {
                 draggable: true,
@@ -36,7 +46,7 @@ function inicializar() {
 	$('#flipBtn').on('click', tablero.flip);
 	$('#clearBtn').on('click', dropMovimientos);
 	$('#quiz1Btn').on('click', function () { tablero.position({a1: 'wK', e4: 'wQ'}) });
-	$('#quiz2Btn').on('click', function () { tablero.position('8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4') });
-	$('#quiz3Btn').on('click', function () { tablero.position('2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2') });
-	$('#quiz4Btn').on('click', function () { tablero.position('8/8/8/8/PP6/8/2P5/rnb5') });
+	$('#quiz2Btn').on('click', loadDesafio(1));
+	$('#quiz3Btn').on('click', loadDesafio(2));
+	$('#quiz4Btn').on('click', loadDesafio(3));
 }
