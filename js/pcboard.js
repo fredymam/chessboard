@@ -15,7 +15,7 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	    var trebejo = document.createElement("img");
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
 	    trebejo.style.width = "1em";
-	    trebejo.style.height = "auto";
+	    trebejo.style.height = "1em";
 	    parrafo.appendChild(trebejo);
 
 	    document.getElementById("notacion").appendChild(parrafo);	
@@ -31,9 +31,10 @@ function dropMovimientos () {
 }
 
 function loadDesafio (num) {
-  dropMovimientos();	
-  tablero.position(desafios[num]);	
+  dropMovimientos();
   alert(desafios[num]);
+  tablero.position(desafios[num]);	
+  alert("debug");
 }
 
 function inicializar() {
