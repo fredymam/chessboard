@@ -5,7 +5,8 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
 	    jugada++;
 	    const trebejo = document.createElement("img");
-	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png"
+	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
+	    trebejo.width = "1em";
 	    const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' +  source + '-' + target); 
 	    const parrafo = document.createElement("p");
 	    parrafo.appendChild(trebejo);
