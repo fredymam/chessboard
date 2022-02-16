@@ -4,8 +4,11 @@ var jugada = 0;
 function onDrop (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
 	    jugada++;
+	    const trebejo = document.createElement("img");
+	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png"
 	    const movimiento = document.createTextNode(jugada + '. ' + piece + ' ' +  source + '-' + target); 
 	    const parrafo = document.createElement("p");
+	    parrafo.appendChild(trebejo);
 	    parrafo.appendChild(movimiento);
 	    document.getElementById("notacion").appendChild(parrafo);	
 	}
@@ -18,7 +21,6 @@ function dropMovimientos () {
   while (lista.hasChildNodes()) {  
 	  lista.removeChild(lista.firstChild);
   }	 
-  alert("clear function");
 }
 
 function inicializar() {
