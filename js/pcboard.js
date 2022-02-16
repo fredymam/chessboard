@@ -34,7 +34,7 @@ function loadDesafio (num) {
   dropMovimientos();
   alert(desafios[num]);
   tablero.position(desafios[num]);	
-  alert("debug");
+  alert(");
 }
 
 function inicializar() {
@@ -46,9 +46,9 @@ function inicializar() {
                 onDrop: addJugada});			
 	$(window).resize(tablero.resize);				
 	$('#flipBtn').on('click', tablero.flip);
-	$('#clearBtn').on('click', loadDesafio(0));
-	$('#quiz1Btn').on('click', loadDesafio(1));
-	$('#quiz2Btn').on('click', loadDesafio(2));
-	$('#quiz3Btn').on('click', loadDesafio(3));
-	$('#quiz4Btn').on('click', loadDesafio(4));
+	$('#clearBtn').on('click', function () { loadDesafio(0) });
+	$('#quiz1Btn').on('click', function () { loadDesafio(1) });;
+	$('#quiz2Btn').on('click', function () { loadDesafio(2) });
+	$('#quiz3Btn').on('click', function () { loadDesafio(3) });
+	$('#quiz4Btn').on('click', function () { loadDesafio(4) });
 }
