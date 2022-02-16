@@ -1,6 +1,6 @@
 var tablero;
 var jugada = 0;
-var desafios = ['8/8/8/8/4Q3/8/8/K7',
+var desafios = ['1pppppp1/pppppppp/pppppppp/pppppppp/ppppQppp/pppppppp/pppppppp/Kppppppp',
 				'8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4',
 				'2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2',
 				'8/8/8/8/PP6/8/2P5/rnb5'];
