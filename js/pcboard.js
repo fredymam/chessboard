@@ -8,7 +8,7 @@ var desafios = ['8/8/8/8/4Q3/8/8/K7',
 function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
 		var parrafo = document.createElement("p");
-		parrafo.style.fontSize = "12px";
+		parrafo.style.fontSize = "1.5em";
 		jugada++;
 		var movimiento = document.createTextNode(jugada + '. ');
 		parrafo.appendChild(movimiento);
