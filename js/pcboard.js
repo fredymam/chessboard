@@ -1,10 +1,12 @@
 var tablero;
 var jugada = 0;
-var desafios = ['8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4',
+var desafios = ['',
+	 			'8/8/8/8/4Q3/8/8/K7',
+				'8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4',
 				'2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2',
 				'8/8/8/8/PP6/8/2P5/rnb5'];
 
-function onDrop (source, target, piece, newPos, oldPos, orientation) {
+function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
 		var parrafo = document.createElement("p");
 		jugada++;
@@ -22,7 +24,6 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 }
 
 function dropMovimientos () {
-  tablero.clear();
   jugada = 0;
   const lista = document.getElementById("notacion");
   while (lista.hasChildNodes()) {  
@@ -30,9 +31,9 @@ function dropMovimientos () {
   }	 
 }
 
-function loadDesafio(num) {
+function loadDesafio (num) {
   dropMovimientos();	
-  tablero.position(desafios[1]);	
+  tablero.position(desafios[num]);	
 }
 
 function inicializar() {
@@ -41,12 +42,12 @@ function inicializar() {
                 dropOffBoard: 'trash',
                 sparePieces: true,
                 showNotation: true,
-                onDrop: onDrop});			
+                onDrop: addJugada});			
 	$(window).resize(tablero.resize);				
 	$('#flipBtn').on('click', tablero.flip);
-	$('#clearBtn').on('click', dropMovimientos);
-	$('#quiz1Btn').on('click', function () { tablero.position({a1: 'wK', e4: 'wQ'}) });
-	$('#quiz2Btn').on('click', loadDesafio(1));
-	$('#quiz3Btn').on('click', loadDesafio(2));
-	$('#quiz4Btn').on('click', loadDesafio(3));
+	$('#clearBtn').on('click', loadDesafio(0));
+	$('#quiz1Btn').on('click', loadDesafio(1));
+	$('#quiz2Btn').on('click', loadDesafio(2));
+	$('#quiz3Btn').on('click', loadDesafio(3));
+	$('#quiz4Btn').on('click', loadDesafio(4));
 }
