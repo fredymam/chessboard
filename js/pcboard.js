@@ -16,7 +16,7 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
 	    trebejo.style.width = "1em";
 	    trebejo.style.height = "1em";
-	    trebejo.style.verticalAlign = "top";
+	    trebejo.style.verticalAlign = "middle";
 	    parrafo.appendChild(trebejo);
 	    var coordenada = document.createTextNode(source +'-'+ target);
         parrafo.appendChild(coordenada);
