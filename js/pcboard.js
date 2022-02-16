@@ -11,14 +11,6 @@ function onDrop (source, target, piece, newPos, oldPos, orientation) {
 	}
 }
 
-function dropMovimientos () {
-  board.clear;
-  jugada = 0;
-  const lista = document.getElementById("notacion");
-  while (lista.hasChildNodes()) {  
-	  lista.removeChild(lista.firstChild);
-  }
-}
 
 function inicializar() {
 	board = Chessboard('tablero', {
