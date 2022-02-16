@@ -17,6 +17,7 @@ function dropMovimientos () {
   const lista = document.getElementById("notacion");
   while (lista.hasChildNodes()) {  
 	  lista.removeChild(lista.firstChild);
+  }	 
 }
 
 function inicializar() {
@@ -34,4 +35,3 @@ function inicializar() {
 	$('#quiz3Btn').on('click', function () { tablero.position('2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2') });
 	$('#quiz4Btn').on('click', function () { tablero.position('8/8/8/8/PP6/8/2P5/rnb5') });
 }
-
