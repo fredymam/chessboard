@@ -14,10 +14,11 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 		parrafo.appendChild(movimiento);
 	    var trebejo = document.createElement("img");
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
-	    trebejo.style.width = "1em";
-	    trebejo.style.height = "1em";
+	    trebejo.style.width = "1.5em";
+	    trebejo.style.height = "1.5em";
 	    parrafo.appendChild(trebejo);
-
+	    var coordenada = document.createTextNode(' '+source +'-'+ target);
+        parrafo.appendChild(coordenada);
 	    document.getElementById("notacion").appendChild(parrafo);	
 	}
 }
