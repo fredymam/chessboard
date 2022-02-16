@@ -34,7 +34,7 @@ function dropMovimientos () {
 function loadDesafio (num) {
   dropMovimientos();
   if (num==0) tablero.clear()
-  else tablero.position(desafios[num--]);	
+  else tablero.position(desafios[--num]);	
 }
 
 function inicializar() {
