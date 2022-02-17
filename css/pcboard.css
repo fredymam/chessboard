@@ -6,15 +6,17 @@ body {
 } 
 	
 #contenedor {
-	margin: 4px;
-	border: 2px;
-	padding: 1px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 	width: 100vw;
 	height: 100vh;
-	box-sizing: border-box;
 } 
 
 #panel-tablero {
+	margin: 0px;
+	border: 1px solid black;
+	padding: 2px;
 	width: 75%;
 	height: 100%;	
 	background-color: orange;
@@ -22,6 +24,9 @@ body {
 }
 
 #panel-menu {
+	margin: 0px;
+	border: 1px solid blue;
+	padding: 2px;
 	width: 25%;
 	height: 100%;
 	background-color: red;
