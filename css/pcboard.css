@@ -39,8 +39,8 @@ body {
 }
 
 #tablero {
-	margin: auto;
-	width: 70%;
+	margin: auto auto;
+	height: 50%;
 }
 
 #menu {
