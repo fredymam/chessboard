@@ -8,23 +8,23 @@ body {
 #contenedor {
 	width: 100vw;
 	height: 100vh;
-	background-color: orange;
 } 
 
-#area {
+#panel-tablero {
 	width: 75%;
 	height: 100%;	
+	background-color: orange;
+}
+
+#panel-menu {
+	width: 25%;
+	height: 100%;
+	background-color: red;
 }
 
 #tablero {
 	width: 70%; 
 	margin: auto;
-}
-
-#panel {
-	width: 25%;
-	height: 100%;
-	background-color: red;
 }
 
 #menu {
