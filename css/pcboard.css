@@ -38,6 +38,7 @@ body {
 	padding: 5px;
 	height: 35%; 	
 	background-color: #6633FF;
+	box-sizing: border-box;
 }
 
 #notacion {
@@ -45,4 +46,5 @@ body {
 	height: 65%;
 	overflow-y: scroll; 
 	background-color: #6666FF;
+	box-sizing: border-box;
 }
