@@ -21,7 +21,7 @@ body {
 	border: 0px;
 	padding: 0px;
 	width: 75%;
-	height: 50%;	
+	height: 100%;	
 	background-color: orange;
 	box-sizing: border-box;
 }
@@ -31,8 +31,9 @@ body {
 	border: 0px;
 	padding: 0px;
 	width: 25%;
-	height: 50%;
+	height: 100%;
 	background-color: red;
+	background-color: black;
 	box-sizing: border-box;
 }
 
