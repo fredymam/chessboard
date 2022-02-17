@@ -8,7 +8,11 @@ body {
 	/* Evita que la página se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
-	
+
+.titulo {
+	fontsize: 2em;
+}	
+
 #contenedor {
 	width: 100vw;
 	height: 100vh;	
@@ -27,9 +31,10 @@ body {
 #panel-menu {
 	width: 27%;
 	height: 100%;
-	float: right;	
+	float: left;	
 	clear: both;
-	border: 1px solid red;
+	border: 1px solid green;
+	box-sizing: border-box;
 }
 
 #tablero {
@@ -47,6 +52,6 @@ body {
 	padding: 5px;
 	height: 65%;
 	width: 100%;
-	overflow-y: scroll; 
 	background-color: #6666FF;
+	overflow-y: scroll; 
 }
