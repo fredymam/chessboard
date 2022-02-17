@@ -51,6 +51,7 @@ body {
 	border: 0px;
 	padding: 0px;
 	height: 25%; 
+	border: 2px solid yellow;
 	background-color: green;
 	box-sizing: border-box;
 }
