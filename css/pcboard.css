@@ -5,20 +5,24 @@ body {
 	overscroll-behavior: contain;
 } 
 	
-.container {
+#contenedor {
 	width: 100vw;
 	height: 100vh;
 	background-color: orange;
 } 
 
+#area {
+	width: 75%;
+	height: 100%;	
+}
+
 #tablero {
-	width: 60%; 
-	height: 100%;
+	width: 70%; 
 	margin: auto;
 }
 
 #panel {
-	width: 40%;
+	width: 25%;
 	height: 100%;
 	background-color: red;
 }
