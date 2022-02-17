@@ -4,6 +4,7 @@ body {
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 	/* Evita que la página se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
@@ -14,10 +15,9 @@ body {
 } 
 
 #panel-tablero {
-	width: 72%;
+	width: 75%;
 	height: 100%;
 	float: left;
-	box-sizing: border-box;
 	border: 2px solid;
 	display: flex;
 	justify-content: center;
@@ -25,10 +25,9 @@ body {
 }
 
 #panel-menu {
-	width: 28%;
+	width: 25%;
 	height: 100%;
 	float: right;
-	box-sizing: border-box;
 	border: 2px solid;
 }
 
@@ -38,17 +37,13 @@ body {
 
 #menu {
 	padding: 5px;
-	height: 35%; 
-	box-sizing: border-box;
-	clear: both;
+	height: 35%; 	
 	background-color: #6633FF;
 }
 
 #notacion {
 	padding: 5px;
 	height: 65%;
-	box-sizing: border-box;
-	clear: both;
 	overflow-y: scroll; 
 	background-color: #6666FF;
 }
