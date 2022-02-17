@@ -6,9 +6,9 @@ body {
 } 
 	
 #contenedor {
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
+	margin: 4px;
+	border: 2px;
+	padding: 1px;
 	width: 100vw;
 	height: 100vh;
 	box-sizing: border-box;
