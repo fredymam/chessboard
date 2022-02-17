@@ -1,5 +1,11 @@
 @charset "ISO-8859-1";
 
 body {
-	overscroll-behavior: contain; /* deshabilita el refresh en Android */
-}  
+	/* Evita que la página se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
+	overscroll-behavior: contain;
+} 
+	
+.container {
+	width: 100vw;
+	height: 100vh;
+} 
