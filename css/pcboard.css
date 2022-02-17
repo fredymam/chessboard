@@ -23,8 +23,8 @@ body {
 	width: 70%;
 	height: 100%;	
 	float: left;
-	background-color: orange;
 	box-sizing: border-box;
+	background-color: red;	
 }
 
 #panel-menu {
@@ -34,8 +34,8 @@ body {
 	width: 30%;
 	height: 100%;
 	float: left;
-	background-color: red;
 	box-sizing: border-box;
+	background-color: orange;	
 }
 
 #tablero {
