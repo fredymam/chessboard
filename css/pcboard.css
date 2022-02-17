@@ -2,7 +2,7 @@
 
 body {
 	margin: 0px;
-	border: 1px solid red;
+	border: 0px;
 	padding: 0px;	
 	box-sizing: border-box;
 	/* Evita que la página se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
