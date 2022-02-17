@@ -25,7 +25,6 @@ body {
 	float: left;
 	background-color: orange;
 	box-sizing: border-box;
-	display: inline-block;
 }
 
 #panel-menu {
@@ -37,11 +36,11 @@ body {
 	float: left;
 	background-color: red;
 	box-sizing: border-box;
-	display: inline-block;
 }
 
 #tablero {
 	margin: auto;
+	height: 70%;
 	background-color: black;
 }
 
@@ -54,7 +53,6 @@ body {
 	background-color: green;
 	box-sizing: border-box;
 	clear: both;
-	display: block;
 }
 
 #notacion {
@@ -67,5 +65,4 @@ body {
 	background-color: lightblue;
 	box-sizing: border-box;
 	clear: both;
-	display: block;
 }
