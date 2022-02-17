@@ -22,7 +22,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #FFCC99;
-	box-sizing: border-box;	
 }
 
 #panel-menu {
@@ -30,7 +29,7 @@ body {
 	height: 100%;
 	float: right;	
 	clear: both;
-	box-sizing: border-box;	
+	border: 1px solid red;
 }
 
 #tablero {
@@ -40,14 +39,14 @@ body {
 #menu {
 	padding: 5px;
 	height: 35%; 	
-	background-color: #6633FF;
-	box-sizing: border-box;	
+	width: 100%;
+	background-color: #6666FF;
 }
 
 #notacion {
 	padding: 5px;
 	height: 65%;
+	width: 100%;
 	overflow-y: scroll; 
 	background-color: #6666FF;
-	box-sizing: border-box;	
 }
