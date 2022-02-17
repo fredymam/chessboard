@@ -40,8 +40,7 @@ body {
 
 #tablero {
 	margin: auto;
-	height: 70%;
-	background-color: black;
+	width: 70%;
 }
 
 #menu {
