@@ -4,6 +4,7 @@ body {
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 	/* Evita que la página se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
@@ -24,7 +25,7 @@ body {
 	width: 25%;
 	height: 100%;
 	float: right;
-	border: 2px solid;
+	
 	clear: both;
 	box-sizing: border-box;
 }
