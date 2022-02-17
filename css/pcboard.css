@@ -1,6 +1,9 @@
 @charset "ISO-8859-1";
 
 body {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 	/* Evita que la página se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
