@@ -22,6 +22,7 @@ body {
 	padding: 0px;
 	width: 55%;
 	height: 100%;	
+	float: left;
 	background-color: orange;
 	box-sizing: border-box;
 }
@@ -32,6 +33,7 @@ body {
 	padding: 0px;
 	width: 20%;
 	height: 100%;
+	float: left;
 	background-color: red;
 	box-sizing: border-box;
 }
