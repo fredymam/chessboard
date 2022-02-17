@@ -10,7 +10,8 @@ body {
 } 
 
 .titulo {
-	fontsize: 2em;
+	font-size: 2em;
+	font-weight: bold;
 }	
 
 #contenedor {
@@ -26,6 +27,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #FFCC99;
+	box-sizing: border-box;	
 }
 
 #panel-menu {
@@ -46,6 +48,7 @@ body {
 	height: 35%; 	
 	width: 100%;
 	background-color: #6666FF;
+	box-sizing: border-box;
 }
 
 #notacion {
@@ -54,4 +57,5 @@ body {
 	width: 100%;
 	background-color: #6666FF;
 	overflow-y: scroll; 
+	box-sizing: border-box;
 }
