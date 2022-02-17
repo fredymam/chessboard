@@ -24,7 +24,6 @@ body {
 	height: 100%;	
 	float: left;
 	box-sizing: border-box;
-	background-color: orange;	
 }
 
 #panel-menu {
@@ -38,6 +37,7 @@ body {
 }
 
 #tablero {
+	margin: auto auto;
 	width: 50%;
 }
 
