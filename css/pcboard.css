@@ -29,6 +29,7 @@ body {
 	height: 100%;
 	float: right;
 	border: 2px solid;
+	clear: both;
 }
 
 #tablero {
