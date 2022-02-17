@@ -10,7 +10,7 @@ body {
 	
 
 #panel-tablero {
-	width: 75%;
+	width: 73%;
 	height: 100%;
 	float: left;
 	border: 2px solid;
@@ -22,7 +22,7 @@ body {
 }
 
 #panel-menu {
-	width: 25%;
+	width: 27%;
 	height: 100%;
 	float: right;
 	border: 2px solid;
