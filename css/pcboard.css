@@ -39,10 +39,7 @@ body {
 }
 
 #tablero {
-	width: 50%;
-	height: 50%; 
 	margin: auto;
-	box-sizing: border-box;
 	background-color: black;
 }
 
