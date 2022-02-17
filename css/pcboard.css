@@ -1,0 +1,5 @@
+@charset "ISO-8859-1";
+
+body {
+	overscroll-behavior: contain; /* deshabilita el refresh en Android */
+}  

@@ -8,8 +8,7 @@ var desafios = ['1pppppp1/pppppppp/pppppppp/pppppppp/ppppQppp/pppppppp/pppppppp/
 function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard')) {
 		var parrafo = document.createElement("p");
-		jugada++;
-		var movimiento = document.createTextNode(jugada + '. ');
+		var movimiento = document.createTextNode(++jugada + '. ');
 		parrafo.appendChild(movimiento);
 	    var trebejo = document.createElement("img");
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
