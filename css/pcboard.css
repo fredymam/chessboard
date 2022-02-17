@@ -24,7 +24,7 @@ body {
 #panel-menu {
 	width: 27%;
 	height: 100%;
-	float: right;
+	float: left;
 	border: 2px solid;
 	clear: both;
 	box-sizing: border-box;
