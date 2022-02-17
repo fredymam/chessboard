@@ -51,9 +51,10 @@ body {
 	border: 0px;
 	padding: 0px;
 	height: 35%; 
-	border: 2px solid ;
+	border: 2px solid;
 	background-color: green;
 	box-sizing: border-box;
+	clear: both;
 }
 
 #notacion {
@@ -65,4 +66,5 @@ body {
 	border: 2px solid black;
 	background-color: lightblue;
 	box-sizing: border-box;
+	clear: both;
 }
