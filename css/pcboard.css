@@ -17,6 +17,7 @@ body {
 #contenedor {
 	width: 100vw;
 	height: 100vh;	
+	display: inline-block;
 }
 
 #panel-tablero {
@@ -37,7 +38,6 @@ body {
 	clear: both;
 	border: 1px solid green;
 	box-sizing: border-box;
-	display: inline-block;
 }
 
 #tablero {
