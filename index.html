@@ -15,23 +15,20 @@
 <body>    
     <div class="container">
 		<div id="tablero"></div>
-		<div class="col-md-4" style="height: 100vh; background-color: red">
-            	<div class="row" style="height: 25vh; background-color: green">
-	                <h3>Editor de Tablero</h3>
-	              	<p><input type="button" id="clearBtn" value="Limpiar Tablero"/>
-	                   <input type="button" id="flipBtn" value="Girar Tablero"/>
-	                </p>   
-	                <p><input type="button" id="quiz1Btn" value="Desafío #1"/>
-		               <input type="button" id="quiz2Btn" value="Desafío #2"/>
-		               <input type="button" id="quiz3Btn" value="Desafío #3"/>
-		               <input type="button" id="quiz4Btn" value="Desafío #4"/>
-		            </p>   
-		        </div>
-		        <div class="row" style="height: 75vh; background-color: yellow">
-               		<!--  <h3>Movimientos</h3> -->
-           			<div id="notacion" style="height: 100%; overflow-y: scroll; border:2px solid black;"></div>     
-            	</div>
-            </div>
+		<div id="panel">
+        	<div id="menu">
+                <h3>Editor de Tablero</h3>
+              	<p><input type="button" id="clearBtn" value="Limpiar Tablero"/>
+                   <input type="button" id="flipBtn" value="Girar Tablero"/>
+                </p>   
+                <p><input type="button" id="quiz1Btn" value="Desafío #1"/>
+	               <input type="button" id="quiz2Btn" value="Desafío #2"/>
+	               <input type="button" id="quiz3Btn" value="Desafío #3"/>
+	               <input type="button" id="quiz4Btn" value="Desafío #4"/>
+	            </p>   
+	            <h3>Movimientos</h3>
+		    </div>
+		    <div id="notacion"></div>     
         </div>
     </div>    
  
