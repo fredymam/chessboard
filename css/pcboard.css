@@ -5,7 +5,7 @@ body {
 	border: 0px;
 	padding: 0px;	
 	box-sizing: border-box;
-	/* Evita que la p·gina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
+	/* Evita que la p√°gina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
 
@@ -37,6 +37,7 @@ body {
 	clear: both;
 	border: 1px solid green;
 	box-sizing: border-box;
+	display: inline-block;
 }
 
 #tablero {
