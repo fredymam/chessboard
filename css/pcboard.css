@@ -45,12 +45,18 @@ body {
 }
 
 #menu {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 	height: 25%; 
 	background-color: green;
 	box-sizing: border-box;
 }
 
 #notacion {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 	height: 75%;
 	overflow-y: scroll; 
 	border: 2px solid black;
