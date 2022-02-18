@@ -5,7 +5,7 @@ body {
 	border: 5px solid #CCCCCCFF;
 	padding: 4px;	
 	box-sizing: border-box;
-	/* Evita que la p·gina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
+	/* Evita que la p√°gina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
 
@@ -23,9 +23,6 @@ body {
 	width: 73%;
 	height: 100%;
 	float: left;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #FFCC99;
 	box-sizing: border-box;	
 }
