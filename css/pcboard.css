@@ -42,7 +42,7 @@ p {
 }
 
 #tablero {
-	width: 50%;
+	width: 100vmin;
 }
 
 #menu {
