@@ -4,13 +4,12 @@ body {
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
-	box-sizing: border-box;
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 } 
 
 .titulo {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 }	
 
@@ -24,18 +23,18 @@ body {
 }
 
 #panel-tablero {
-	width: 73%;
+	width: 70%;
 	height: 100%;
-	float: left;
 	background-color: #FFCC99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #panel-menu {
-	width: 27%;
+	width: 30%;
 	height: 100%;
-	float: left;	
-	clear: both;
-	border: 2px solid blue;
+	border: 2px solid white;
 	box-sizing: border-box;
 }
 
@@ -45,15 +44,17 @@ body {
 
 #menu {
 	padding: 5px;
-	height: 35%; 	
+	height: 40%; 	
 	width: 100%;
-	background-color: #6666FF;		
+	background-color: yellow;	
+	box-sizing: border-box;		
 }
 
 #notacion {
 	padding: 5px;
-	height: 65%;
+	height: 60%;
 	width: 100%;
-	background-color: #6666FF;
+	background-color: red;
 	overflow-y: scroll; 
+	box-sizing: border-box;
 }
