@@ -8,9 +8,14 @@ body {
 	overscroll-behavior: contain;
 } 
 
+p {
+	margin: 2px;
+}
+
 .titulo {
 	font-size: 1.5em;
 	font-weight: bold;
+	text-align: center;
 }	
 
 #contenedor {
@@ -22,7 +27,7 @@ body {
 	display: flex;	
 }
 
-#panel-tablero {
+#paneltablero {
 	width: 70%;
 	height: 100%;
 	background-color: #FFCC99;
@@ -31,11 +36,9 @@ body {
 	align-items: center;
 }
 
-#panel-menu {
+#panelmenu {
 	width: 30%;
 	height: 100%;
-	border: 2px solid white;
-	box-sizing: border-box;
 }
 
 #tablero {
@@ -43,18 +46,23 @@ body {
 }
 
 #menu {
-	padding: 5px;
+	border: 2px solid black;
+	padding: 4px 4px;
 	height: 40%; 	
 	width: 100%;
-	background-color: yellow;	
-	box-sizing: border-box;		
+	background-color: #EECC50;	
+	box-sizing: border-box;
+	float: left;
 }
 
 #notacion {
-	padding: 5px;
+	border: 2px solid black;
+	border-top: none;
+	padding: 4px 4px;	
 	height: 60%;
 	width: 100%;
-	background-color: red;
+	background-color: #CCEE50;
 	overflow-y: scroll; 
+	float: left;
 	box-sizing: border-box;
 }

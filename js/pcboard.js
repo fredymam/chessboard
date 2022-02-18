@@ -18,13 +18,13 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	    parrafo.appendChild(trebejo);
 	    var coordenada = document.createTextNode(source +'-'+ target);
         parrafo.appendChild(coordenada);
-	    document.getElementById("notacion").appendChild(parrafo);	
+	    document.getElementById("movimientos").appendChild(parrafo);	
 	}
 }
 
 function dropMovimientos () {
   jugada = 0;
-  const lista = document.getElementById("notacion");
+  const lista = document.getElementById("movimientos");
   while (lista.hasChildNodes()) {  
 	  lista.removeChild(lista.firstChild);
   }	 
