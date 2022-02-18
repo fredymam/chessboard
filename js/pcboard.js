@@ -16,7 +16,7 @@ function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	    trebejo.style.height = "1.8em";
 	    trebejo.style.verticalAlign = "text-bottom";
 	    parrafo.appendChild(trebejo);
-	    var coordenada = document.createTextNode(source +'-'+ target);
+	    var coordenada = document.createTextNode(target + ' (' + source + '-' + target + ')');
         parrafo.appendChild(coordenada);
 	    document.getElementById("movimientos").appendChild(parrafo);	
 	}
