@@ -6,7 +6,7 @@ var desafios = ['1pppppp1/pppppppp/pppppppp/pppppppp/ppppQppp/pppppppp/pppppppp/
 				'8/8/8/8/PP6/8/2P5/rnb5'];
 
 function addJugada (source, target, piece, newPos, oldPos, orientation) {
-	if (!(source == 'spare' || target == 'offboard')) {
+	if (!(source == 'spare' || target == 'offboard') && (source != target)) {
 		var parrafo = document.createElement("p");
 		var movimiento = document.createTextNode(++jugada + '. ');
 		parrafo.appendChild(movimiento);
