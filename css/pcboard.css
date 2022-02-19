@@ -5,64 +5,81 @@ body {
 	border: 0px;
 	padding: 0px;
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
-	overscroll-behavior: contain;
+ 	overscroll-behavior: contain; 
 } 
 
 p {
-	margin: 2px;
+	margin: 0px .75em;
+	display: inline-block;
+	font-family: "Trebuchet MS", Verdana, sans-serif;	
 }
 
 .titulo {
+	margin: 1px 1px;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
+	display: block;
+	border: 2px salmon dashed;
 }	
 
 #contenedor {
-	border: 2px solid black;
-	padding: 2px;	
 	width: 100vw;
 	height: 100vh;	
-	box-sizing: border-box;
 	display: flex;	
-}
-
-#paneltablero {
-	width: 70%;
-	height: 100%;
-	background-color: #FFCC99;
-	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-#panelmenu {
-	width: 30%;
-	height: 100%;
+#paneltablero {
+	box-sizing: border-box; 
+	border: 2px solid red;
+	padding: 2px;
+	width: 100vmin;
+	height: 100vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 }
 
 #tablero {
-	width: 75vmin;
+	width: 78%; /* max(78%, 78vh); */
+}
+
+
+#panelmenu {
+	box-sizing: border-box;
+	border: 2px solid black;
+	padding: 2px;
+	overflow-y: scroll; 
+	background-color: #FFCB99;
+}
+
+@media screen and (orientation: portrait) { 
+	#panelmenu {
+		width: 100vw;
+		height: calc(100vh - 100vw);
+	}
+}
+
+@media screen and (orientation: landscape) { 
+	#panelmenu {
+		width: 30vw;
+		height: 100vh;
+	}
 }
 
 #menu {
-	border: 2px solid black;
-	padding: 4px 4px;
-	height: 40%; 	
-	width: 100%;
-	background-color: #EECC50;	
-	box-sizing: border-box;
-	float: left;
+	background-color: sandybrown;
 }
 
-#notacion {
-	border: 2px solid black;
-	border-top: none;
-	padding: 4px 14px;	
-	height: 60%;
-	width: 100%;
-	background-color: #EECC50;
-	overflow-y: scroll; 
-	float: left;
+#menu > div {
 	box-sizing: border-box;
+	margin: 2px;
+	padding: 2px;
+	border: 2px;
 }
+
+
+
