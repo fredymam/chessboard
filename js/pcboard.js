@@ -38,9 +38,10 @@ function loadDesafio (num) {
 }
 
 function preventMotion(event) { 
-	window.scrollTo(0, 0); 
+	$(window).scrollTo(0, 0); 
 	event.preventDefault(); 
 	event.stopPropagation(); 
+	alert("debug");
 } 
 
 function inicializar() {
@@ -50,13 +51,13 @@ function inicializar() {
                 sparePieces: true,
                 showNotation: true,
                 onDrop: addJugada});			
-	$(window).resize(tablero.resize);				
+	$(window).resize(tablero.resize);	
+	$(window).addEventListener("scroll", preventMotion, false); 
+	$(window).addEventListener("touchmove", preventMotion, false);
 	$('#flipBtn').on('click', tablero.flip);
 	$('#clearBtn').on('click', function () { loadDesafio(0) });
 	$('#quiz1Btn').on('click', function () { loadDesafio(1) });
 	$('#quiz2Btn').on('click', function () { loadDesafio(2) });
 	$('#quiz3Btn').on('click', function () { loadDesafio(3) });
-	$('#quiz4Btn').on('click', function () { loadDesafio(4) });
-	window.addEventListener("scroll", preventMotion, false); 
-	window.addEventListener("touchmove", preventMotion, false); 
+	$('#quiz4Btn').on('click', function () { loadDesafio(4) }); 
 }

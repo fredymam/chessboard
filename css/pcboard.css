@@ -9,6 +9,9 @@
 html {
 	width: 100vw;
 	height: 100vh;	
+}
+
+body {
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 }
@@ -21,7 +24,7 @@ p {
 
 .button {
     background-color: #4CAF50; /* Green */
-    color: yellow;
+    color: white;
 	border: 1px solid greenyellow;
 	padding: 8px 8px;
 	margin: 1px;
@@ -105,6 +108,3 @@ p {
 	padding: 2px;
 	border: 2px;
 }
-
-
-
