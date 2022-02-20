@@ -6,14 +6,7 @@
 	padding: 0px;
 }
 
-html {
-	width: 100vw;
-	height: 90vh;	
-}
-
 body {
-	width: 100%;
-	height: 100%;	
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 }
@@ -58,7 +51,7 @@ p {
 	display: flex;	
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: flex-start;		
+	align-items: flex-start;	
 }
 
 #paneltablero {
@@ -69,11 +62,12 @@ p {
 	height: 100vmin;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	background-color: white;	
 }
 
 #tablero {
-	width: 78%; /* max(78%, 78vh); */
+	width: 78%; 
 }
 
 #panelmenu {
@@ -87,14 +81,14 @@ p {
 @media screen and (orientation: portrait) {
 	#panelmenu {
 		width: 100vw;
-		height: calc(90vh - 100vw);
+		/* height: calc(90vh - 100vw); */
 	}
 }
 
 @media screen and (orientation: landscape) { 
 	#panelmenu {
 		width: 30vw;
-		height: 100vh;
+		height: 100vmin; /* 100vh; */
 	}
 }
 
