@@ -5,7 +5,7 @@ body {
 	border: 0px;
 	padding: 0px;
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
- 	/* overscroll-behavior: contain; */ 
+ 	overscroll-behavior: contain; 
 } 
 
 p {
@@ -41,11 +41,11 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
-	overscroll-behavior: contain;
 }
 
 #tablero {
 	width: 78%; /* max(78%, 78vh); */
+	overscroll-behavior: none;
 }
 
 
