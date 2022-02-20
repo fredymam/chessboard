@@ -63,11 +63,13 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: white;	
+	background-color: white;
+	overscroll-behavior: none;		
 }
 
 #tablero {
 	width: 78%; 
+	overscroll-behavior: none;
 }
 
 #panelmenu {
@@ -87,7 +89,7 @@ p {
 
 @media screen and (orientation: landscape) { 
 	#panelmenu {
-		width: 30vw;
+		/* width: 30vw; */
 		height: 100vmin; /* 100vh; */
 	}
 }
