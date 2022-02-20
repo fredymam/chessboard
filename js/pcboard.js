@@ -37,6 +37,12 @@ function loadDesafio (num) {
   else tablero.position(desafios[--num]);	
 }
 
+function preventMotion(event) { 
+	window.scrollTo(0, 0); 
+	event.preventDefault(); 
+	event.stopPropagation(); 
+} 
+
 function inicializar() {
 	tablero = Chessboard('tablero', {
                 draggable: true,
@@ -51,4 +57,6 @@ function inicializar() {
 	$('#quiz2Btn').on('click', function () { loadDesafio(2) });
 	$('#quiz3Btn').on('click', function () { loadDesafio(3) });
 	$('#quiz4Btn').on('click', function () { loadDesafio(4) });
+	window.addEventListener("scroll", preventMotion, false); 
+	window.addEventListener("touchmove", preventMotion, false); 
 }

@@ -21,7 +21,7 @@ p {
 
 .button {
     background-color: #4CAF50; /* Green */
-    color: white;
+    color: yellow;
 	border: 1px solid greenyellow;
 	padding: 8px 8px;
 	margin: 1px;
@@ -65,6 +65,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
+	overflow: none;
 }
 
 #tablero {
