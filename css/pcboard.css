@@ -8,7 +8,7 @@
 
 html {
 	width: 100vw;
-	height: 80vh;	
+	height: 90vh;	
 }
 
 body {
@@ -58,6 +58,7 @@ p {
 	display: flex;	
 	flex-flow: row wrap;
 	justify-content: center;
+	align-items: flex-start;		
 }
 
 #paneltablero {
@@ -86,7 +87,7 @@ p {
 @media screen and (orientation: portrait) {
 	#panelmenu {
 		width: 100vw;
-		height: calc(100vh - 120vw);
+		height: calc(90vh - 100vw);
 	}
 }
 
