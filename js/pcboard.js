@@ -45,7 +45,6 @@ function inicializar() {
                 showNotation: true,
                 onDrop: addJugada});			
 	$(window).resize(tablero.resize);	
-	$('body').bind('touchmove', function(e){e.preventDefault()});
 	$('#flipBtn').on('click', tablero.flip);
 	$('#clearBtn').on('click', function () { loadDesafio(0) });
 	$('#quiz1Btn').on('click', function () { loadDesafio(1) });
