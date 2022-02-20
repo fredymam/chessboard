@@ -84,12 +84,9 @@ p {
 }
 
 @media screen and (orientation: portrait) {
-	html {
-		height: 90vh;
-	} 
 	#panelmenu {
 		width: 100vw;
-		height: calc(100vh - 110vh);
+		height: calc(100vh - 100vw);
 	}
 }
 
