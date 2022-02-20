@@ -51,4 +51,22 @@ function inicializar() {
 	$('#quiz2Btn').on('click', function () { loadDesafio(2) });
 	$('#quiz3Btn').on('click', function () { loadDesafio(3) });
 	$('#quiz4Btn').on('click', function () { loadDesafio(4) }); 
+
+	$(document).on("touchmove",function(e){
+		e.preventDefault();
+	});
+	$("body").on("touchstart",".scrollable",function(e){
+		if(e.currentTarget.scrollTop===0){
+			e.currentTarget.scrollTop = 1;
+		}else if(e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight){
+			e.currentTarget.scrollTop-=1;
+		}
+	});
+	$("body").on("touchmove",".scrollable",function(e){
+		e.stopPropagation();
+	});
+
+	$("body").hammer().on("pinch",function(e){
+		e.gesture.preventDefault();
+	});
 }

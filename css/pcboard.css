@@ -1,5 +1,11 @@
 @charset "ISO-8859-1";
 
+.scrollable{
+	overflow: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling:touch;
+}
+
 * {
 	margin: 0px;
 	border: 0px;
