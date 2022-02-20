@@ -7,10 +7,10 @@
 }
 
 html {
-	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	width: 100vw;
 	height: 100vh;	
-	overscroll-behavior: none;
+	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
+	overscroll-behavior: contain;
 }
 
 p {
