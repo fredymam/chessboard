@@ -7,6 +7,8 @@
 }
 
 body {
+	width: 100vw;
+	height: 100vh;
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 }
@@ -86,7 +88,9 @@ p {
 	width: 30vw; 
 	height: min(100vh, 70vw);
 	overflow-y: scroll; 
- 	background-color: green; /* #FFCB99; */
+ 	background-color: yellow; /* #FFCB99; */
+ 	display: flex;
+ 	flex-direction: column;
 }
 
 @media screen and (orientation: portrait) {
@@ -96,10 +100,11 @@ p {
 	}	
 	#panelmenu {
 		width: 100vw;
-		height: cacl(100vh - 100vw);
+		height: calc(100vh - 100vw);
 	}
 }
 
 #menu {
 	background-color: sandybrown;
 }
+
