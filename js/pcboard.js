@@ -8,12 +8,12 @@ var desafios = ['1pppppp1/pppppppp/pppppppp/pppppppp/ppppQppp/pppppppp/pppppppp/
 function addJugada (source, target, piece, newPos, oldPos, orientation) {
 	if (!(source == 'spare' || target == 'offboard') && (source != target)) {
 		var parrafo = document.createElement("p");
-		var movimiento = document.createTextNode(++jugada + '. ');
+		var movimiento = document.createTextNode(++jugada + '.');
 		parrafo.appendChild(movimiento);
 	    var trebejo = document.createElement("img");
 	    trebejo.src = "img/chesspieces/wikipedia/"+piece+".png";
-	    trebejo.style.width = "1.8em";
-	    trebejo.style.height = "1.8em";
+	    trebejo.style.width = "1.5em";
+	    trebejo.style.height = "1.5em";
 	    trebejo.style.verticalAlign = "text-bottom";
 	    parrafo.appendChild(trebejo);
 /* 	    var coordenada = document.createTextNode(target + ' (' + source + '-' + target + ')'); */
