@@ -86,7 +86,7 @@ p {
 	width: 30vw; 
 	height: min(100vh, 70vw);
 	overflow-y: scroll; 
-	background-color: #FFCB99;
+	background-color: red; /* #FFCB99; */
 }
 
 @media screen and (orientation: portrait) {
@@ -96,7 +96,7 @@ p {
 	}	
 	#panelmenu {
 		width: 100vw;
-		height: calc(100% - 100vw);
+		height: cacl(calc(100vh - calc(100vh - 100%)) - 100vw);
 	}
 }
 
