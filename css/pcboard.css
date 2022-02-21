@@ -7,6 +7,7 @@
 }
 
 body {
+	height: 100vh;
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 }
@@ -86,7 +87,7 @@ p {
 	width: 30vw; 
 	height: min(100vh, 70vw);
 	overflow-y: scroll; 
- 	background-color: purple; /* #FFCB99; */
+ 	background-color: black; /* #FFCB99; */
  	display: flex;
  	flex-direction: column;
 }
