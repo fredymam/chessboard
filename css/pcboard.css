@@ -88,7 +88,7 @@ p {
 	width: 30vw; 
 	height: min(100vh, 70vw);
 	overflow-y: scroll; 
- 	background-color: yellow; /* #FFCB99; */
+ 	background-color: orange; /* #FFCB99; */
  	display: flex;
  	flex-direction: column;
 }
@@ -100,7 +100,7 @@ p {
 	}	
 	#panelmenu {
 		width: 100vw;
-		height: calc(100vh - 100vw);
+		height: calc(100% - 100vw);
 	}
 }
 
