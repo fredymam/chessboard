@@ -7,8 +7,8 @@
 }
 
 body {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	/* Evita que la pagina se actualice (en Android) cuando se arrastran las piezas superiores al tablero */
 	overscroll-behavior: contain;
 }
@@ -88,7 +88,7 @@ p {
 	width: 30vw; 
 	height: min(100vh, 70vw);
 	overflow-y: scroll; 
- 	background-color: lime; /* #FFCB99; */
+ 	background-color: aqua; /* #FFCB99; */
  	display: flex;
  	flex-direction: column;
 }
@@ -100,7 +100,7 @@ p {
 	}	
 	#panelmenu {
 		width: 100vw;
-		height: calc(100% - 100vw);
+		height: calc(calc(100vh - calc(100vh - 100%)) - 100vw);
 	}
 }
 
