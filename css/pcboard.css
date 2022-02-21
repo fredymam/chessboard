@@ -96,7 +96,7 @@ p {
 	}	
 	#panelmenu {
 		width: 100vw;
-		height: calc(95vh - 100vw);
+		height: calc(100% - 100vw);
 	}
 }
 
