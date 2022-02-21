@@ -52,14 +52,18 @@ p {
 	border: 2px salmon dashed;
 }	
 
+#menu > .titulo {
+	text-shadow: 1px 1px white, -1px -1px greenyellow;
+}
+
 #contenedor {
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-/* 	height: 100vh; */
-/* 	width: 100vw;	 */
+/* 	height: 100vh; 
+ 	width: 100vw;	 */
 	display: flex;	
 	flex-flow: row wrap;
 	justify-content: center;
@@ -111,4 +115,7 @@ p {
 	background-color: sandybrown;
 }
 
+#movimientos {
+	padding: .5em 0px .5em 0px;
+}
 
