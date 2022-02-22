@@ -139,3 +139,21 @@ p {
  	padding: .5em 0px .5em 0px;
  	order: 1; /* Evita que las pestañas se formen en 2 filas  */
 }
+
+.enunciado {
+	color: red;
+	font-size: 1em;
+	font-style: italic;
+	text-align: justify;
+	display: block;
+	font-family: "Trebuchet MS", Verdana, sans-serif;	
+}
+
+.hashtag {
+	color: blue;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	font-family: Verdana, sans-serif;	
+}
