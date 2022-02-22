@@ -110,34 +110,34 @@ p {
     color: black;
 }
 
-#pestañas {
+#solapas {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#pestañas > label {
+#solapas > label {
 	background: sandybrown;
 	border: 1px solid black;
 	padding: .5em .5em;	
 }
 
-#pestañas > input[type=radio], .tab {
+#solapas > input[type=radio], .tab {
 	display: none;
 }
 
-#pestañas > input[type=radio]:checked + label {
+#solapas > input[type=radio]:checked + label {
 	background: greenyellow;
 	border-bottom: 1px solid yellow;	
 }
 
-#pestañas > input[type=radio]:checked + label + .tab {
+#solapas > input[type=radio]:checked + label + .tab {
 	display: block;
 }
 
 .tab {
  	width: 100%; 
  	padding: .5em 0px .5em 0px;
- 	order: 1; /* Evita que las pestañas se formen en 2 filas  */
+ 	order: 1; /* Evita que las solapas se formen en 2 filas  */
 }
 
 .enunciado {
