@@ -20,18 +20,22 @@
             <div id="menu">
                 <p class="titulo">Tablero de PC</p>
                 <div class="botonera">
-                  <input type="button" id="clearBtn" class="button" value="Borrar"/>
-                  <input type="button" id="flipBtn"  class="button" value="Girar"/>
-                  <input type="button" id="quiz1Btn" class="button" value="Desafío #1"/>
-                  <input type="button" id="quiz2Btn" class="button" value="Desafío #2"/>
-                  <input type="button" id="quiz3Btn" class="button" value="Desafío #3"/>
-                  <input type="button" id="quiz4Btn" class="button" value="Desafío #4"/>
+	                <input type="button" id="clearBtn" value="Borrar"/>
+	                <input type="button" id="flipBtn"  value="Girar"/>
+	                <input type="button" id="quiz1Btn" value="Desafío #1"/>
+	                <input type="button" id="quiz2Btn" value="Desafío #2"/>
+	                <input type="button" id="quiz3Btn" value="Desafío #3"/>
+	                <input type="button" id="quiz4Btn" value="Desafío #4"/>
                 </div>             
             </div>
-            <div id="notacion">
-                <p class="titulo">Movimientos</p>
-                <div id="movimientos"></div>
-            </div>  
+            <div id="pestañas">
+	            <input id="tab-consigna" type="radio" name="tab-group" checked="checked"/>
+	            <label for="tab-consigna">Enunciado</label>
+	            <div class="tab" id="consigna"></div>                
+	            <input id="tab-movimientos" type="radio" name="tab-group"/>
+	            <label for="tab-movimientos">Movimientos</label>
+	           	<div class="tab" id="movimientos"></div> 
+            </div>            
         </div>  
     </div>    
  

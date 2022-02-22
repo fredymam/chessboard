@@ -17,53 +17,12 @@ p {
 	font-family: "Trebuchet MS", Verdana, sans-serif;	
 }
 
-.button {
-    background-color: #4CAF50; /* Green */
-    color: yellow;
-	border: 1px solid greenyellow;
-	padding: 5px 5px;
-	margin: 2px 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	font-size: 0.8rem;
-	border-radius: 8px;
-}
-
-.button:hover {
-	background-color: greenyellow; 
-	border: 1px solid black;
-    color: black;
-}
-
-.botonera {
-	box-sizing: border-box;
-	margin: 2px 2px;
-	padding: 2px;
-	border: 2px;
-}
-
-.titulo {
-	margin: 1px 1px;
-	font-size: 1.25rem;
-	font-weight: bold;
-	text-align: center;
-	display: block;
-	border: 2px salmon dashed;
-}	
-
-#menu > .titulo {
-	text-shadow: 1px 1px white, -1px -1px greenyellow;
-}
-
 #contenedor {
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-/* 	height: 100vh; 
- 	width: 100vw;	 */
 	display: flex;	
 	flex-flow: row wrap;
 	justify-content: center;
@@ -115,7 +74,68 @@ p {
 	background-color: sandybrown;
 }
 
-#movimientos {
-	padding: .5em 0px .5em 0px;
+.titulo {
+	margin: 1px 1px;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	border: 2px salmon dashed;
+	text-shadow: 1px 1px white; /* , -1px -1px greenyellow */;
 }
 
+.botonera {
+	box-sizing: border-box;
+	margin: 2px 2px;
+	padding: 2px;
+	border: 2px;
+}
+
+.botonera > input {
+    background-color: #4CAF50; 
+    color: yellow;
+	border: 1px solid greenyellow;
+	padding: 5px 5px;
+	margin: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 0.8rem;
+	border-radius: 8px;
+}
+
+.botonera > input:hover {
+	background-color: greenyellow; 
+	border: 1px solid black;
+    color: black;
+}
+
+#pestañas {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#pestañas > label {
+	background: sandybrown;
+	border: 1px solid black;
+	padding: .5em .5em;	
+}
+
+#pestañas > input[type=radio], .tab {
+	display: none;
+}
+
+#pestañas > input[type=radio]:checked + label {
+	background: greenyellow;
+	border-bottom: 1px solid yellow;	
+}
+
+#pestañas > input[type=radio]:checked + label + .tab {
+	display: block;
+}
+
+.tab {
+ 	width: 100%; 
+ 	padding: .5em 0px .5em 0px;
+ 	order: 1; /* Evita que las pestañas se formen en 2 filas  */
+}
