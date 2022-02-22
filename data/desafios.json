@@ -3,35 +3,34 @@ var desafio = [
 		"id": 1,
 		"titulo": "Rescatando a la Dama",
 		"posicion": "1pppppp1/pppppppp/pppppppp/pppppppp/ppppQppp/pppppppp/pppppppp/Kpppppp1",
-		"consigna": "<p class='enunciado'>Rescatar a la Dama que se encuentra en la casilla e4, con el Rey que está en a1, "
-			       +"pero antes de ello, capturar todos los peones y no demorar más de 60 movimientos.</p><br>"
-			       +"<p class='hashtag'>#pensamientoalgorítmico #patrones #generalización</p>"
+		"consigna": "<p class='enunciado'>Rescatar a la Dama que se encuentra en la casilla e4, con el Rey que está en a1, "+
+			        "pero antes de ello, capturar todos los peones y no demorar más de 60 movimientos.</p><br>"+
+			        "<p class='hashtag'>#pensamientoalgorítmico #patrones #generalización</p>"
 	},
 	{
 		"id": 2,
 		"titulo": "La Fuga del Rey",
 		"posicion": "8/8/8/8/PPP5/NNBP4/RBNP4/KRNP4",
-		"consigna": "<p class='enunciado'>En este desafío, deberás elaborar un plan que le permita al Rey fugarse por la casilla de escape (d4).</p>"
-				   +"<p class='enunciado'>→ Todas las piezas se mueven como en el Ajedrez y, no pueden salirse del cuadrado sombreado, definido por: "
-				   +"a1-a4-d4-d1</p>"
-				   +"<p class='enunciado'>→ El Rey no puede realizar más de 3 movimientos.</p><br>"
-				   +"<p class='hashtag'>#pensamientoalgorítmico #abstracción #patrones #planificación #descomposición #lógica</p>"
+		"consigna": "<p class='enunciado'>En este desafío, deberás elaborar un plan que le permita al Rey fugarse por la casilla de escape (d4).</p>"+
+				    "<p class='enunciado'>→ Todas las piezas se mueven como en el Ajedrez y, no pueden salirse del cuadrado sombreado, definido por: a1-a4-d4-d1</p>"+
+				    "<p class='enunciado'>→ El Rey no puede realizar más de 3 movimientos.</p><br>"+
+				    "<p class='hashtag'>#pensamientoalgorítmico #abstracción #patrones #planificación #descomposición #lógica</p>"
 	},
 	{
 		"id": 3,
 		"titulo": "Cabalgando en un Laberinto",
 		"posicion": "2r5/1p1n4/P1pbq3/1P1p1k2/2P1pbn1/3P1p1r/4P1p1/N4P2",
-		"consigna": "<p class='enunciado'>Trasladar a el caballo desde a1 (salida) a h8 (llegada), evadiendo los obstáculos (no se pueden capturar "
-				   +"las piezas) en la menor cantidad de movimientos.</p><br>"
-				   +"<p class='hashtag'>#pensamientoalgorítmico #abstracción #descomposición #representación #patrones</p>"
+		"consigna": "<p class='enunciado'>Trasladar a el caballo desde a1 (salida) a h8 (llegada), evadiendo los obstáculos (no se pueden capturar "+
+				    "las piezas) en la menor cantidad de movimientos.</p><br>"+
+				    "<p class='hashtag'>#pensamientoalgorítmico #abstracción #descomposición #representación #patrones</p>"
 	},
 	{
 		"id": 4,
 		"titulo": "Carrera de Trebejos",
 		"posicion": "8/8/8/8/PP6/8/2P5/rnb5",
-		"consigna": "<p class='enunciado'>En este desafío, deberás desplazar a los peones y a las piezas al campo opuesto y, quien primero lo haga gana la carrera.</p>" 
-			       +"<p class='enunciado'>→ Las piezas se mueven como en el Ajedrez y, pueden hacerlo libremente por todo el tablero (respetando las reglas); no obstante, no está permitido la captura.</p>"
-			       +"<p class='enunciado'>→ Es un juego por turnos, donde inician el primer movimiento las blancas y, se van alternando sucesivamente.</p>"
-			       +"<p class='enunciado'>→ Se puede jugar con un/a compañero/a, o bien, si es de manera individual, se deberá evaluar siempre el mejor movimiento del oponente.</p><br>"
-				   +"<p class='hashtag'>#pensamientoalgorítmico #abstracción #evaluación #planificación #descomposición #lógica</p>"
+		"consigna": "<p class='enunciado'>En este desafío, deberás desplazar a los peones y a las piezas al campo opuesto y, quien primero lo haga gana la carrera.</p>"+ 
+			        "<p class='enunciado'>→ Las piezas se mueven como en el Ajedrez y, pueden hacerlo libremente por todo el tablero (respetando las reglas); no obstante, no está permitido la captura.</p>"+
+			        "<p class='enunciado'>→ Es un juego por turnos, donde inician el primer movimiento las blancas y, se van alternando sucesivamente.</p>"+
+			        "<p class='enunciado'>→ Se puede jugar con un/a compañero/a, o bien, si es de manera individual, se deberá evaluar siempre el mejor movimiento del oponente.</p><br>"+
+				    "<p class='hashtag'>#pensamientoalgorítmico #abstracción #evaluación #planificación #descomposición #lógica</p>"
 	}]
