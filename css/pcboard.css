@@ -64,6 +64,8 @@ p {
 	}	
 	#panelmenu {
 		width: 100vw;
+		/* Se calcula la zona vertical visible, descontando barra de navegación.. que junto a position:fixed,
+		  evita que la pantalla se mueva al hacer scroll */
 		height: calc(100% - 100vw);
 	}
 }
