@@ -38,13 +38,11 @@ p {
 	background-color: white;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	overscroll-behavior: content;		
+	align-items: center;		
 }
 
 #tablero {
 	width: 78%; 
-	overscroll-behavior: content;
 }
 
 #panelmenu {
